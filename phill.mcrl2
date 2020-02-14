@@ -1,0 +1,7 @@
+act
+  think,take_Right,take_Left,eat,release_Left,release_Right;
+proc
+  Release= release_Left.release_Right.phill+release_Right.release_Left.phill ;
+  phill= take_Right.take_Left.eat.Release+take_Left.take_Right.eat.Release ;
+init
+  phill ;
